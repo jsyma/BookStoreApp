@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528fxml.OwnerCustomerScreenController">
+   <children>
+      <TableView fx:id="userView" layoutX="6.0" layoutY="14.0" prefHeight="267.0" prefWidth="588.0">
+         <columns>
+            <TableColumn fx:id="usernames" prefWidth="216.0" text="Username" />
+            <TableColumn fx:id="passwords" minWidth="0.0" prefWidth="258.0" text="Password" />
+            <TableColumn fx:id="points" prefWidth="113.0" text="Points" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textFieldUsername" layoutX="37.0" layoutY="310.0" />
+      <TextField fx:id="textFieldPassword" layoutX="226.0" layoutY="310.0" />
+      <Button layoutX="405.0" layoutY="310.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
+      <Label layoutX="37.0" layoutY="293.0" text="Username" />
+      <Label layoutX="226.0" layoutY="293.0" text="Password" />
+      <Button layoutX="372.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="25.0" prefWidth="104.0" text="Delete" />
+      <Button layoutX="482.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeToStartScreen" prefHeight="25.0" prefWidth="104.0" text="Back" />
+      <Label fx:id="WARNING" layoutX="112.0" layoutY="365.0" textFill="RED" />
+   </children>
+</AnchorPane>

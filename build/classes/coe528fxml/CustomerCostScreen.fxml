@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528fxml.CustomerCostScreenController">
+   <children>
+      <Label layoutX="119.0" layoutY="86.0" prefHeight="42.0" prefWidth="107.0" text="Total Cost:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="151.0" prefHeight="27.0" prefWidth="68.0" text="Points:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="273.0" layoutY="252.0" mnemonicParsing="false" onAction="#changeToLoginScreen" text="Logout" />
+      <Label layoutX="119.0" layoutY="200.0" prefHeight="27.0" prefWidth="68.0" text="Status:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="points" layoutX="194.0" layoutY="151.0" prefHeight="27.0" prefWidth="97.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="194.0" layoutY="200.0" prefHeight="27.0" prefWidth="107.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cost" layoutX="243.0" layoutY="92.0" prefHeight="17.0" prefWidth="257.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
